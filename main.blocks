@@ -1,0 +1,262 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="YS{luq7K*(,j63uwzoPJ">item</variable><variable id="m;mD$1:z7*.SJ/co(L4s">mySprite</variable><variable id="J}.-y,om4Wxxten+Nfga">mySprite2</variable><variable id="AWwX;0%kRM0t:|7w^YGu">value</variable><variable id="M#j`WYipq(/Olaqt0tNw">list</variable><variable id="P_NQa6NNGpvT1eYvvyNX">gameOn</variable><variable id="9lKK#svua7v;x!f|kO*J">mySprite3</variable><variable id="_=6d7#fsJo;*p#5D.012">striLine</variable><variable id="I-F0=EZEgv6Qbyr~OqIe">mySprite4</variable><variable id="jD*$bipsDSxq3#WnLDno">Trees</variable><variable type="KIND_SpriteKind" id="b6^{SlUet9}lnv,pF72!">Player</variable><variable type="KIND_SpriteKind" id="h2p~e0WDT:+}%H;x:20+">Projectile</variable><variable type="KIND_SpriteKind" id="OVsWw+9S:ByRAF6hgp-W">Food</variable><variable type="KIND_SpriteKind" id="u--Nk;op1bi1nT6*/_J5">Enemy</variable><variable type="KIND_SpriteKind" id=",-y3nl_[lS`(fN#+hR}Z">EnemyCar</variable><variable type="KIND_SpriteKind" id="j?L=c0CYD3Vp{Lwn$fu*">Striple</variable></variables><block type="pxt-on-start" id="G3sQJUug]TPoeL};GFPd" x="0" y="0"><statement name="HANDLER"><block type="hudSetLife" id="I|rfQPU1FiSXwxoX=gfV"><value name="value"><shadow type="math_number" id="zwIk:gs@OO=XMnmIcOxv"><field name="NUM">8</field></shadow></value><next><block type="variables_set" id="qnW,^V!0eq9n=To(j4XL"><field name="VAR" id="jD*$bipsDSxq3#WnLDno">Trees</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="lists_create_with" id="{b~Px3Beg,]gtn@aHIj."><mutation items="3" horizontalafter="3"></mutation><value name="ADD0"><block type="screen_image_picker" id="72iS^zm{q!:.u+.Z~.k~"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . c c c c 6 . . . . . 
+. . . . c c 6 7 7 5 5 6 6 . . . 
+. . c c 6 6 6 6 7 5 5 7 c c . . 
+. c 6 6 6 7 7 7 7 7 7 5 6 c c . 
+. c 6 6 7 7 7 5 7 6 7 7 7 6 c c 
+c 6 6 7 7 6 7 7 7 6 7 7 6 6 6 c 
+c c 6 6 6 7 6 7 6 6 6 6 5 7 6 c 
+c c c c 6 7 7 6 7 7 7 6 7 6 6 c 
+. c c 6 6 6 6 c 6 6 6 6 6 c c c 
+. c c 6 6 c 6 6 c 6 c 6 6 c c . 
+. . c c f f 6 6 c f f c c f . . 
+. . . . c f c c c f c f f . . . 
+. . . . . 4 f f f c . e . . . . 
+. . . . . . e e e . . 4 . . . . 
+. . . . . . . e e . e . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"72iS^zm{q!:.u+.Z~.k~"}}</data></block></value><value name="ADD1"><block type="screen_image_picker" id="OLQ`;2kV}%0.E|UmS,C["><field name="img">img`
+. . . . . . 6 6 6 6 . . . . . . 
+. . . . . c 6 7 7 6 c . . . . . 
+. . . . c 6 7 5 7 7 6 c . . . . 
+. . 6 6 c c 6 5 5 6 c c 6 6 . . 
+6 6 6 5 5 5 6 7 5 6 5 5 7 6 6 6 
+6 6 7 7 7 5 7 6 7 5 5 7 7 7 7 6 
+. c c c 6 6 7 6 6 5 7 6 c c 6 . 
+6 c 6 6 6 6 6 c c 6 6 6 6 6 c 6 
+6 6 7 7 7 c c c c c c 7 7 7 6 6 
+6 7 7 7 6 6 c c c c 6 6 7 7 7 6 
+c 6 c c 6 7 6 c c 6 7 6 c c 6 c 
+. c c 5 5 7 6 7 7 6 7 5 5 c c . 
+. c 6 7 5 5 6 7 7 6 5 5 7 6 c . 
+. 6 6 7 7 6 6 5 5 6 6 7 7 6 6 . 
+. . 6 6 6 6 c 6 7 6 c 6 6 6 . . 
+. . . 6 6 c . 6 6 6 . c 6 . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"OLQ`;2kV}%0.E|UmS,C["}}</data></block></value><value name="ADD2"><block type="screen_image_picker" id="g4Ta$];EwQ0{+[+sY6#I"><field name="img">img`
+. . . . . . . c c . . . . . . . 
+. . . . c c c 6 5 c 6 6 . . . . 
+. . . . c 6 c 5 5 c 7 6 . . . . 
+. . . 6 c c 7 5 5 7 c 6 6 . . . 
+. . c c 7 7 7 7 7 5 7 7 c 6 . . 
+. 6 6 6 c 6 7 7 7 7 6 c c 6 6 . 
+c 7 7 7 6 c 7 c 6 7 6 7 7 7 7 6 
+c c c 6 6 6 c 6 6 6 6 7 7 6 6 6 
+. c c 7 6 6 6 6 6 7 7 7 7 c 6 . 
+. c 7 7 6 6 7 6 6 7 7 6 7 7 c . 
+. c c c c 7 7 6 f 7 7 c c c c . 
+. . . . c 7 c f f c 7 c . . . . 
+. . . . . 6 f e e e c . . . . . 
+. . . . . e e e e e e . . . . . 
+. . . . e e . e e . e e . . . . 
+. . . . . . . e e . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"g4Ta$];EwQ0{+[+sY6#I"}}</data></block></value></block></value><next><block type="variables_set" id="Yo{+Cn[KI0HRa)7kQwI%"><field name="VAR" id="_=6d7#fsJo;*p#5D.012">striLine</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="61[|{NpxI9Y24kVO9Um+"><field name="BOOL">FALSE</field></block></value><next><block type="variables_set" id="i?N90k/O^*|b4Z7`B;an"><field name="VAR" id="P_NQa6NNGpvT1eYvvyNX">gameOn</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="gfA1lS4nM7-:B16s}~%S"><field name="BOOL">TRUE</field></block></value><next><block type="variables_set" id="wQClmia2JX:BoO2hA`C2"><field name="VAR" id="m;mD$1:z7*.SJ/co(L4s">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="@.yGW1`t()3E$,nMy0)l"><value name="img"><shadow type="screen_image_picker" id="#?^$urOCWn0Iev(Ko|%q"><field name="img">img`
+. . . . . . e e c c e e . . . . 
+. . . . . e 2 2 2 2 2 2 e . . . 
+. . . . 2 c 2 2 2 2 2 2 c 2 . . 
+. . . e 2 c 4 2 2 2 2 2 c 2 e . 
+. . . f 2 2 4 2 2 2 2 2 c 2 f . 
+. . . f 2 2 4 2 2 2 2 2 2 2 f . 
+. . . f 2 2 4 2 2 2 2 2 2 2 f . 
+. . . f 2 c 2 4 4 2 2 2 c 2 f . 
+. . . e 2 c e c c c c e c 2 e . 
+. . . e 2 e c b b b b c e 2 e . 
+. . . e 2 e b b b b b b e 2 e . 
+. . . e e e e e e e e e e e e . 
+. . . f e d e e e e e e d e f . 
+. . . f e 2 d e e e e d 2 e f . 
+. . . f f e e e e e e e e f f . 
+. . . . f f . . . . . . f f . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"#?^$urOCWn0Iev(Ko|%q"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="lCV)D=IK-Z(VN22aWNv}"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="[gK3soCUVDgA;t/6Z891"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="+?i5m|nHmrzf!13tWLvT"><field name="VAR" id="m;mD$1:z7*.SJ/co(L4s">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="NXtWWtC}s((L7U/hEY1l"><field name="speed">50</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="761CgMG6Ik/-ua/3o@EY"><field name="speed">20</field></shadow></value><next><block type="spritesetsetstayinscreen" id="`t}dO)fV^,J7Dtbq?GQP"><value name="sprite"><block type="variables_get" id="vjMfg.=5r*N(q6%$Qvz|"><field name="VAR" id="m;mD$1:z7*.SJ/co(L4s">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff" id="4~,Cez`elAo9d?zmLN%F"><field name="on">true</field></shadow></value><next><block type="gamesetbackgroundimage" id="N/U7{OkAwZ~=ZtG+2bqV"><value name="img"><shadow type="background_image_picker" id="(_mc-OXshKgNhUx$7vuw"><field name="img">img`
+777777777777777777777777..................................................................................................................7777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+777777777777777777777777.................................................................................................................77777777777777777777777
+`</field><data>{"commentRefs":[],"fieldData":{"img":"(_mc-OXshKgNhUx$7vuw"}}</data></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="gameinterval" id="eFJB1eq$=EbFRIhcQPpU" x="980" y="160"><value name="period"><shadow type="timePicker" id=";DQZy!],Qz2`,{A/,3WU"><field name="ms">500</field></shadow></value><statement name="HANDLER"><block type="controls_if" id="TeaD/_+Ex7;x=_^hgYUq"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="variables_get" id="xd5Dz~iUA`Pf.[NKQ=xB"><field name="VAR" id="P_NQa6NNGpvT1eYvvyNX">gameOn</field></block></value><statement name="DO0"><block type="controls_if" id="-xx8,~kLyFMhAmh62x86"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="variables_get" id="Ld}=:9Fd6*-q4]q+i/bX"><field name="VAR" id="_=6d7#fsJo;*p#5D.012">striLine</field></block></value><statement name="DO0"><block type="variables_set" id="Ir:;LGYF$%.L-As@O_GI"><field name="VAR" id="I-F0=EZEgv6Qbyr~OqIe">mySprite4</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="P-]kQ:X1+PNkMR6bn()D"><value name="img"><shadow type="screen_image_picker" id="}{].{j`!%!n*feJfan6z"><field name="img">img`
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+1 1 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"}{].{j`!%!n*feJfan6z"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="r]iXmVA0=jb6oepscobs"><field name="MEMBER">Striple</field></shadow></value></block></value><next><block type="spritesetpos" id="S7{ygm(2k@?FP=C+zjEV"><value name="sprite"><block type="variables_get" id="^N4ed4]HGtAZ1U`CXyr?"><field name="VAR" id="I-F0=EZEgv6Qbyr~OqIe">mySprite4</field></block></value><value name="x"><shadow type="positionPicker" id="pG}~X^K|F^qCfMgnU4j;"><field name="index">80</field></shadow></value><value name="y"><shadow type="positionPicker" id="bO4esOo34MaqQUJ+FMv`"><field name="index">-15</field></shadow></value><next><block type="Sprite_blockCombine_set" id="=Lql)p}H-eGw~i5:,b]Z"><field name="property">Sprite.vy@set</field><value name="mySprite"><block type="variables_get" id="_ZL$Tdw9l3F]O5]1o*lj"><field name="VAR" id="I-F0=EZEgv6Qbyr~OqIe">mySprite4</field></block></value><value name="value"><shadow type="math_number" id="6:|sa+byPLHO)M6p7/X%"><field name="NUM">40</field></shadow></value><next><block type="Sprite_blockCombine_set" id="miH5!zZ@y,8`*,(PTmV,"><field name="property">Sprite.z</field><value name="mySprite"><block type="variables_get" id="]GKDO7^-tIA51ZQr_7xs"><field name="VAR" id="I-F0=EZEgv6Qbyr~OqIe">mySprite4</field></block></value><value name="value"><shadow type="math_number" id="C^%UZ(O;l22/f3MPXWj-"><field name="NUM">-1</field></shadow></value></block></next></block></next></block></next></block></statement><next><block type="variables_set" id="*:XP/itn!sKpuf%Zgxzg"><field name="VAR" id="_=6d7#fsJo;*p#5D.012">striLine</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_negate" id=".;.uJQhm3ty=A]1UlDA8"><value name="BOOL"><block type="variables_get" id="`a{UC2^A.-ZR[58?-JnY"><field name="VAR" id="_=6d7#fsJo;*p#5D.012">striLine</field></block></value></block></value><next><block type="controls_if" id="e*3*^UHu}S_6qVIs0Kn/"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="percentchance" id="=Q~;XWXGP-R.j77QzK?+"><value name="percentage"><shadow type="math_number_minmax" id="[.=6R%]uEvRt=t2`k$l2"><mutation min="0" max="Infinity" label="Percentage" precision="0"></mutation><field name="SLIDER">50</field></shadow></value></block></value><statement name="DO0"><block type="variables_set" id="in-;gWTY2Leb_exs@_oN"><field name="VAR" id="J}.-y,om4Wxxten+Nfga">mySprite2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="WiayZjR?Bb9J6LG/`pvE"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . c c . . . . . . . 
+. . . . c c c 6 5 c 6 6 . . . . 
+. . . . c 6 c 5 5 c 7 6 . . . . 
+. . . 6 c c 7 5 5 7 c 6 6 . . . 
+. . c c 7 7 7 7 7 5 7 7 c 6 . . 
+. 6 6 6 c 6 7 7 7 7 6 c c 6 6 . 
+c 7 7 7 6 c 7 c 6 7 6 7 7 7 7 6 
+c c c 6 6 6 c 6 6 6 6 7 7 6 6 6 
+. c c 7 6 6 6 6 6 7 7 7 7 c 6 . 
+. c 7 7 6 6 7 6 6 7 7 6 7 7 c . 
+. c c c c 7 7 6 f 7 7 c c c c . 
+. . . . c 7 c f f c 7 c . . . . 
+. . . . . 6 f e e e c . . . . . 
+. . . . . e e e e e e . . . . . 
+. . . . e e . e e . e e . . . . 
+. . . . . . . e e . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"/ZA6?s?8H`XWi$*OWH[u"}}</data></shadow><block type="lists_index_get" id="YlC3j1sGx#*qK4e+-aLS"><value name="LIST"><block type="variables_get" id="7wOh`jj]EU3RNWYaVp!I"><field name="VAR" id="jD*$bipsDSxq3#WnLDno">Trees</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_random" id="N}d=O?o7Ju,LZrnp30d|"><value name="min"><shadow type="math_number" id="$fgZ2N~EQ(RAA|lE282B"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">10</field></shadow><block type="math_arithmetic" id="DLp,49urE^l4@Q%.#^0O"><field name="OP">MINUS</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="lists_length" id="AwNA}WKuOTID44}NxXSr"><value name="VALUE"><block type="variables_get" id=",e@gXKJ~G$teG/ONPeCs"><field name="VAR" id="jD*$bipsDSxq3#WnLDno">Trees</field></block></value></block></value><value name="B"><shadow type="math_number" id=";8Fi$+9UKu9jb}=E0#A."><field name="NUM">1</field></shadow></value></block></value></block></value></block></value><value name="kind"><shadow type="spritekind" id="0O0Y@?)2}g8A51ldoY;,"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="spritesetsetflag" id="}0qm4lgdKA$7?$;?{#s^"><field name="flag">SpriteFlag.AutoDestroy</field><value name="sprite"><block type="variables_get" id="4C:AVB6svm[:X5k12On$"><field name="VAR" id="J}.-y,om4Wxxten+Nfga">mySprite2</field></block></value><value name="on"><shadow type="toggleOnOff" id="i}j+i6ekh@:G0EQUIKRv"><field name="on">true</field></shadow></value><next><block type="spritesetvel" id="bsYRHHNVQruaS5x$hAJT"><value name="sprite"><block type="variables_get" id="xYSwpN*-u[O3Ln*1~|hB"><field name="VAR" id="J}.-y,om4Wxxten+Nfga">mySprite2</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="AyPvP8n7_1)j{?}(6Irl"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="3fdQd~qmW0-#S2.!Q]x$"><field name="speed">40</field></shadow></value><next><block type="spritesetpos" id="j[S9WOtKh{4%C7A{28,^"><value name="sprite"><block type="variables_get" id="eprIaMDe13A*sO8wLsU1"><field name="VAR" id="J}.-y,om4Wxxten+Nfga">mySprite2</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="z.UjIP:`H^1C5k{@^9b]"><value name="min"><shadow type="math_number" id="Q*rr=QJaB}2K+d*IIbPR"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="{VhlsPwZ49]yf7Q-qG*8"><field name="NUM">20</field></shadow></value></block></value><value name="y"><shadow type="positionPicker" id="[rkw^x,Cv[![6}ILmjd("><field name="index">0</field></shadow></value></block></next></block></next></block></next></block></statement><next><block type="controls_if" id="AVGCVY_U7*GL;{s?2YlJ"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="percentchance" id="X(AAp6;z^RUu-eOwD41+"><value name="percentage"><shadow type="math_number_minmax" id="ssDwdWfYgnLR[BkrtU;$"><mutation min="0" max="Infinity" label="Percentage" precision="0"></mutation><field name="SLIDER">50</field></shadow></value></block></value><statement name="DO0"><block type="variables_set" id="E[8I2JNAh([p;0:k.2Gj"><field name="VAR" id="J}.-y,om4Wxxten+Nfga">mySprite2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="3E3k[X)c[_Y9w@T+(m{g"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . c c . . . . . . . 
+. . . . c c c 6 5 c 6 6 . . . . 
+. . . . c 6 c 5 5 c 7 6 . . . . 
+. . . 6 c c 7 5 5 7 c 6 6 . . . 
+. . c c 7 7 7 7 7 5 7 7 c 6 . . 
+. 6 6 6 c 6 7 7 7 7 6 c c 6 6 . 
+c 7 7 7 6 c 7 c 6 7 6 7 7 7 7 6 
+c c c 6 6 6 c 6 6 6 6 7 7 6 6 6 
+. c c 7 6 6 6 6 6 7 7 7 7 c 6 . 
+. c 7 7 6 6 7 6 6 7 7 6 7 7 c . 
+. c c c c 7 7 6 f 7 7 c c c c . 
+. . . . c 7 c f f c 7 c . . . . 
+. . . . . 6 f e e e c . . . . . 
+. . . . . e e e e e e . . . . . 
+. . . . e e . e e . e e . . . . 
+. . . . . . . e e . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"24=0KcvU.^A|=pdmCz]["}}</data></shadow><block type="lists_index_get" id="@ND?X@TaCzi.6V,0;2ln"><value name="LIST"><block type="variables_get" id="f:^@5f2IaRTog=k)fGpG"><field name="VAR" id="jD*$bipsDSxq3#WnLDno">Trees</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_random" id="9Rty2{+ASi]kphEki0:="><value name="min"><shadow type="math_number" id="R|!kLQS]kfMLY$*)w|K{"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">10</field></shadow><block type="math_arithmetic" id="_wH{n3kW-.).;FN$m9H;"><field name="OP">MINUS</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="lists_length" id="ARrUsRGfLn?M_}=7Tp|k"><value name="VALUE"><block type="variables_get" id=":o@gjYlea]%W`+k{BlQ*"><field name="VAR" id="jD*$bipsDSxq3#WnLDno">Trees</field></block></value></block></value><value name="B"><shadow type="math_number" id="tQ3B^?pVQsJth3x!Xc8$"><field name="NUM">1</field></shadow></value></block></value></block></value></block></value><value name="kind"><shadow type="spritekind" id="#gBIGqp^-l/g}0~BOAhA"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="spritesetsetflag" id="n=W0v3%H|/!ZH`B;py;}"><field name="flag">SpriteFlag.AutoDestroy</field><value name="sprite"><block type="variables_get" id="J8e{_Z?(s*x)@WK,zYE:"><field name="VAR" id="J}.-y,om4Wxxten+Nfga">mySprite2</field></block></value><value name="on"><shadow type="toggleOnOff" id="2((HQJaSL;jM|noI%]U-"><field name="on">true</field></shadow></value><next><block type="spritesetvel" id="nsR;3O$R61KiYJe9/pK5"><value name="sprite"><block type="variables_get" id="r9M[_Q}~Rn;18H;%?K%S"><field name="VAR" id="J}.-y,om4Wxxten+Nfga">mySprite2</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="*#}?k${z+KD]|.zU.a9,"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="62wbHCluwZh%xgqqPr01"><field name="speed">40</field></shadow></value><next><block type="spritesetpos" id="@klX]%Tnrhe60erGxHf7"><value name="sprite"><block type="variables_get" id="Xvdtl.=5|y7#X!xwqYnJ"><field name="VAR" id="J}.-y,om4Wxxten+Nfga">mySprite2</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="Rs@2TR$loY,M]AhPk5z7"><value name="min"><shadow type="math_number" id="X?wa/kWWHOLJ#YlkTj8P"><field name="NUM">140</field></shadow></value><value name="limit"><shadow type="math_number" id="bZa*7L~@xR4z4$bN0LZ}"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker" id="ZjVTq$~=ETMHFL;OAAz="><field name="index">0</field></shadow></value></block></next></block></next></block></next></block></statement><next><block type="controls_if" id="6}g+28H94J7Ec~mgpACW"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="percentchance" id="WmCRXgsYx6dJi@zID#Jf"><value name="percentage"><shadow type="math_number_minmax" id="ahXR2s{KPZ63;2IiJmZG"><mutation min="0" max="Infinity" label="Percentage" precision="0"></mutation><field name="SLIDER">15</field></shadow></value></block></value><statement name="DO0"><block type="variables_set" id="D91s+@P]wS3=;D{-#|e5"><field name="VAR" id="9lKK#svua7v;x!f|kO*J">mySprite3</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Tmjey`vz=4@zqY]DL@IX"><value name="img"><shadow type="screen_image_picker" id="ABjY,nyn/=l)]-T5aPv*"><field name="img">img`
+. . . . . . a a c c a a . . . . 
+. . . . . a 3 3 3 3 3 3 a . . . 
+. . . . 3 c 3 3 3 3 3 3 c 3 . . 
+. . . a 3 c d 3 3 3 3 3 c 3 a . 
+. . . f 3 3 d 3 3 3 3 3 c 3 f . 
+. . . f 3 3 d 3 3 3 3 3 3 3 f . 
+. . . f 3 3 d 3 3 3 3 3 3 3 f . 
+. . . f 3 c 3 d d 3 3 3 c 3 f . 
+. . . a 3 c a c c c c a c 3 a . 
+. . . a 3 a c b b b b c a 3 a . 
+. . . a 3 a b b b b b b a 3 a . 
+. . . a a a a a a a a a a a a . 
+. . . f a d a a a a a a d a f . 
+. . . f a 3 d a a a a d 3 a f . 
+. . . f f a a a a a a a a f f . 
+. . . . f f . . . . . . f f . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"ABjY,nyn/=l)]-T5aPv*"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="pwtV=t9y`nLz:8%.w,1,"><field name="MEMBER">EnemyCar</field></shadow></value></block></value><next><block type="spritesetsetflag" id="cIO?amrlP8i3v$$`t%a:"><field name="flag">SpriteFlag.AutoDestroy</field><value name="sprite"><block type="variables_get" id="P^.WT5ru`j?2jV20x$iU"><field name="VAR" id="9lKK#svua7v;x!f|kO*J">mySprite3</field></block></value><value name="on"><shadow type="toggleOnOff" id="4+ug6cS+,rSB,jxAXr2{"><field name="on">true</field></shadow></value><next><block type="spritesetvel" id="~42p8|U}f!4vPayc3dGq"><value name="sprite"><block type="variables_get" id="gTdRyZVOq7~_9yYm[WY)"><field name="VAR" id="9lKK#svua7v;x!f|kO*J">mySprite3</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="8r/(LubbHJ!=rz5M0n|k"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow><block type="device_random" id="P;2{IwtzJgpua7|I*NZD"><value name="min"><shadow type="math_number" id="$):j7EoyC*,(/9pNP9wC"><field name="NUM">5</field></shadow></value><value name="limit"><shadow type="math_number" id="511$c*~C.xrl,,4:sAZH"><field name="NUM">50</field></shadow></value></block></value><next><block type="spritesetpos" id="!zODbks/q+RW$i,:0MDj"><value name="sprite"><block type="variables_get" id="Ch?_cW~?7@ae}J8,u1ZL"><field name="VAR" id="9lKK#svua7v;x!f|kO*J">mySprite3</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="vF)ZfqKbJ~.z|Z)#eXq1"><value name="min"><shadow type="math_number" id="(b~uzWh0WheP=(H?2TL4"><field name="NUM">30</field></shadow></value><value name="limit"><shadow type="math_number" id="DeM=n__A*T|pN^0qA72v"><field name="NUM">130</field></shadow></value></block></value><value name="y"><shadow type="positionPicker" id="jd}v~wbUk6_Bp6Iu/{yY"><field name="index">0</field></shadow></value></block></next></block></next></block></next></block></statement></block></next></block></next></block></next></block></next></block></statement><statement name="ELSE"><block type="hudChangeLifeBy" id="Ks58N@X#j:J([:Y62GC4"><value name="value"><shadow type="math_number" id="{OqKjvEvMB!lmTRQBE6d"><field name="NUM">-1</field></shadow></value></block></statement></block></statement></block><block type="spritesoverlap" id="nh,]]Win0DbSc^sG|OHb" x="0" y="620"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="~n{`R:2yN~~M0qzL+zCa"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="LK55QE33VeRq%,f5CMcm"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="7%())xk=s|Tc:DKl}$,o"><mutation typename="Sprite"></mutation><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="zt$j?*qZxkZe-JzDiUSz"><field name="MEMBER">Enemy</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="F)~uRB;V#XA::-poEKAY"><field name="VAR" id="P_NQa6NNGpvT1eYvvyNX">gameOn</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="xrg;;opb4*{]d$^BL8MW"><field name="BOOL">FALSE</field></block></value><next><block type="game_control_sprite" id="@ioJ7iQw@))R=9g1i]r."><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="g]!E|~rEoMA-nL.?SYO2"><field name="VAR" id="m;mD$1:z7*.SJ/co(L4s">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="hRT;:d9E][pFXSSE.+_6"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="B:]fbD/o+jBl$mj;;Qp+"><field name="speed">0</field></shadow></value><next><block type="startEffectOnSprite" id="ug#2XHxJ{[DhAhU-UPmB"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="effect">effects.fire</field><value name="sprite"><block type="variables_get" id="#I54`-*G_XCLwb^}pHK_"><field name="VAR" id="m;mD$1:z7*.SJ/co(L4s">mySprite</field></block></value><next><block type="pxt_controls_for_of" id="0ak+~Y?HuPi~?6E-#,Y9"><value name="VAR"><shadow type="variables_get_reporter" id="-Z=a|N/U{X[qBbycZtQo"><field name="VAR" id="AWwX;0%kRM0t:|7w^YGu">value</field></shadow></value><value name="LIST"><shadow type="variables_get"><field name="VAR" id="M#j`WYipq(/Olaqt0tNw">list</field></shadow><block type="allOfKind" id="BzTe*MdE{eJuL;P%*cEX"><value name="kind"><shadow type="spritekind" id=")Sh}umlRN6QwxN8VOsJ8"><field name="MEMBER">Enemy</field></shadow></value></block></value><statement name="DO"><block type="spritesetvel" id=".C-**%VewihkrqV#0VYb"><value name="sprite"><block type="variables_get" id="ebCuqZx1r-(YfThp0!!U"><field name="VAR" id="AWwX;0%kRM0t:|7w^YGu">value</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="^8=+K[ts4X7Srb+Q7i?z"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="tL=LUo-rt5G@Dwu@Hmd1"><field name="speed">0</field></shadow></value></block></statement><next><block type="pxt_controls_for_of" id="Zlg5dre1dn};_^b%wu6d"><value name="VAR"><shadow type="variables_get_reporter" id="iP]QE#4:MU5FCbX`1oUz"><field name="VAR" id="AWwX;0%kRM0t:|7w^YGu">value</field></shadow></value><value name="LIST"><shadow type="variables_get"><field name="VAR" id="M#j`WYipq(/Olaqt0tNw">list</field></shadow><block type="allOfKind" id="|AeuzuGj*eBPY~pxi```"><value name="kind"><shadow type="spritekind" id=",D}||c8V`Ep)R9Q-@n1-"><field name="MEMBER">EnemyCar</field></shadow></value></block></value><statement name="DO"><block type="spritesetvel" id="=J@Hn(Xw_-yw+Ju-`xrp"><value name="sprite"><block type="variables_get" id="vrLFBn_6yEF68_{-bx%x"><field name="VAR" id="AWwX;0%kRM0t:|7w^YGu">value</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="w^Eox5(u],D`/)#n0K2P"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="~y9W#*97dYYWq)@t`sG,"><field name="speed">0</field></shadow></value></block></statement><next><block type="pxt_controls_for_of" id="|0Iv{UK^#VW!`eou+r0s"><value name="VAR"><shadow type="variables_get_reporter" id="u=2e+]`_H[fx{ao,f6lx"><field name="VAR" id="AWwX;0%kRM0t:|7w^YGu">value</field></shadow></value><value name="LIST"><shadow type="variables_get"><field name="VAR" id="M#j`WYipq(/Olaqt0tNw">list</field></shadow><block type="allOfKind" id="vWG/yNZ0+?%_XpjKaUNZ"><value name="kind"><shadow type="spritekind" id="]deR!g_*s(yWu,v{67:1"><field name="MEMBER">Striple</field></shadow></value></block></value><statement name="DO"><block type="spritesetvel" id="avb#7hgikvn(AB(0CSJ0"><value name="sprite"><block type="variables_get" id="m[F?99VC]J$wQyn)v--}"><field name="VAR" id="AWwX;0%kRM0t:|7w^YGu">value</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="HrtWY8s4sW4yAI*Q0{7t"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="lg8QkmHzgLBy;Lx}|T!$"><field name="speed">0</field></shadow></value></block></statement></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" id="cKn`c-qzp$]l#zs]Qg=e" x="-260" y="1360"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="`.Q#zEOTXrfE+|/FQ:c("><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="_U={YeEmJ8uQyk+{ctH#"><field name="MEMBER">EnemyCar</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="{t-R4`Gb2U%.r%/qCA*n"><mutation typename="Sprite"></mutation><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="ihAaFn9[GM`Ex*I?EQDi"><field name="MEMBER">EnemyCar</field></shadow></value><statement name="HANDLER"><block type="spritedestroy" id="CcYG{ubb8I(4d`0FI(_,"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><field name="effect">effects.fire</field><value name="sprite"><block type="argument_reporter_custom" id="IDIBj8C!KQ(vzMb00W,M"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></block></value><value name="duration"><shadow type="timePicker" id="2P=CF7@~-csd7B]+KkS_"><field name="ms">200</field></shadow></value><next><block type="spritedestroy" id="q9azwb:Z5,9uHcJ9h%W`"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><field name="effect">effects.fire</field><value name="sprite"><block type="argument_reporter_custom" id="rc4W!UNva-(i-uo$7hs*"><mutation typename="Sprite"></mutation><field name="VALUE">otherSprite</field></block></value><value name="duration"><shadow type="timePicker" id="n2|!CZU1goos:!Z$wQHV"><field name="ms">200</field></shadow></value></block></next></block></statement></block><block type="spritesondestroyed" id=":mc,pF.VZT62pN?U~y!!" x="-240" y="1600"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="xon1-ajiRZQ*]xlK[T8("><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="K@Vf:RJY*g%|k/?x%)e)"><field name="MEMBER">EnemyCar</field></shadow></value><statement name="HANDLER"><block type="hudChangeScoreBy" id="e+E]e8T=p(_mf:Q6h]:E"><value name="value"><shadow type="math_number" id="?K}xX%~7X0NyFrdV9a:l"><field name="NUM">1</field></shadow></value></block></statement></block><block type="spritesoverlap" id="ls[d@@]wt!yTQlU];Ltu" x="1520" y="1620"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="U_z(_r@ba?3@_6B394BF"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="peapF!(:ckcS`Pth(.I8"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="=Ot{!q8pb36xX~vl-{{v"><mutation typename="Sprite"></mutation><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="!h9=L!Q)6$$1kGIL52jF"><field name="MEMBER">EnemyCar</field></shadow></value><statement name="HANDLER"><block type="spritedestroy" id="Z#VO5][pk#8W-d4SdP~t"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><field name="effect">effects.fire</field><value name="sprite"><block type="argument_reporter_custom" id=":Ct]A?bUG,_9K;HtXYsC"><mutation typename="Sprite"></mutation><field name="VALUE">otherSprite</field></block></value><value name="duration"><shadow type="timePicker" id="ku9ea{{US(.TYj27c-Q+"><field name="ms">200</field></shadow></value><next><block type="hudChangeLifeBy" id="W+YyS]G^,MX$-^HmuZGk"><value name="value"><shadow type="math_number" id="MnDYl@_[l2EqGDI/SIeB"><field name="NUM">-1</field></shadow></value></block></next></block></statement></block></xml>
